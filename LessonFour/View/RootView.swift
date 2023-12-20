@@ -14,6 +14,7 @@ struct RootView: View {
             } else {
                 LoginView()
             }
+            
         }
         .onAppear {
             userSettings.isLoggedIn = storageManager.fetchBool()
